@@ -1,0 +1,3 @@
+[submodule "meshui-api"]
+	path = meshui-api
+	url = git@github.com:meshui/meshui-api.git
