@@ -1,0 +1,12 @@
+version: '3.3'
+
+services:
+  app:
+    build:
+      dockerfile: Dockerfile.dev
+      context: ./meshui-app
+    volumes:
+      - /app/node_module
+      - .:/app
+    ports:
+      - 3000:3000
