@@ -6,7 +6,17 @@ services:
       dockerfile: Dockerfile.dev
       context: ./meshui-app
     volumes:
-      - /app/node_module
-      - .:/app
+      - /usr/src/app/node_modules
+      - ./meshui-app:/usr/src/app
     ports:
       - 3000:3000
+  api:
+    build:
+      dockerfile: Dockerfile.dev
+      context: ./meshui-api
+    volumes:
+      - /usr/src/app/node_modules
+      - ./meshui-api:/usr/src/app
+    ports:
+      - 3001:3000
+  

@@ -2,6 +2,6 @@
 Execute
 `./clone-projects.sh`
 
-## Start meshui
+## Start Meshui
 Execute
 `docker-compose up`
